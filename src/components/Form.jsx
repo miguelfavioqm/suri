@@ -2,55 +2,35 @@ import React from "react";
 
 const Form = () => {
   return (
-    <>
+    <div>
       <h3 className="w-full text-center text-2xl p-4">
         Quieres contactarme? Mandame un mensaje 😊
       </h3>
       <form
-        name="contact"
-        method="POST"
+        name="contact v1"
+        method="post"
         data-netlify="true"
-        className="flex flex-col items-center text-xl w-full"
+        onSubmit="submit"
       >
-        <p className="w-full">
-          <label className="flex items-center justify-center">
-            Nombre:{" "}
-            <input
-              type="text"
-              name="name"
-              className="w-2/6 border-2 border-gray-200 mx-2"
-            />
+        <input type="hidden" name="form-name" value="contact v1" />
+        <div>
+          <label>
+            Nombre <br /> <input type="text" name="first-name" />
           </label>
-        </p>
-        <p className="w-full m-2">
-          <label className="flex items-center justify-center">
-            Email:{" "}
-            <input
-              className="w-2/5 h-full border-2 border-gray-200 mx-5"
-              type="email"
-              name="email"
-            />
+        </div>
+        <div>
+          <label htmlFor="email">
+            Email <br /> <input id="email" type="email" name="email" />
           </label>
-        </p>
-        <p className="w-full mb-2">
-          <label className="flex items-center justify-center h-32">
-            Mensaje:{" "}
-            <textarea
-              name="message"
-              className="w-1/2 h-full border-2 border-gray-200 mx-2"
-            ></textarea>
+        </div>
+        <div>
+          <label>
+            Mensaje <br /> <textarea name="mensaje" />
           </label>
-        </p>
-        <p className="w-full flex items-center justify-center">
-          <button
-            type="submit"
-            className="border-black w-1/5 border-2 radius rounded-lg hover:opacity-75"
-          >
-            Enviar
-          </button>
-        </p>
+        </div>
+        <button type="sumbit">Submit</button>
       </form>
-    </>
+    </div>
   );
 };
 
