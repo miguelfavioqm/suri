@@ -6,6 +6,8 @@ import { Main } from "./components/Main";
 import Features from "./components/Features";
 import Body from "./components/CardContainer";
 import CardContainer from "./components/CardContainer";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +19,8 @@ function App() {
       <Features />
       <CardContainer />
       <CardContainer />
+      <Form />
+      <Footer />
     </>
   );
 }
