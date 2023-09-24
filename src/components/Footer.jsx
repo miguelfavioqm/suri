@@ -23,7 +23,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="bg-black text-white text-center">
-        Derechos Reservados © 2023
+        © Derechos Reservados 2023
       </div>
     </footer>
   );
