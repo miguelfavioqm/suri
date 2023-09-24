@@ -6,7 +6,8 @@ import {
   BiAlignLeft,
   BiSolidXSquare,
 } from "react-icons/bi";
-
+import { AiOutlineShopping, AiOutlineContacts } from "react-icons/ai";
+import { GiPencilBrush } from "react-icons/gi";
 const Menu = () => {
   const [menu, SetMenu] = useState(false);
   return (
@@ -84,27 +85,28 @@ const Menu = () => {
         </h1>
       </header>
       {menu ? (
-        <div className="w-full h-screen z-[99] bg-orange-100 fixed top-0 gap-8 flex items-end flex-col p-10">
+        <div className="w-full h-screen z-[99] bg-orange-100 fixed top-0 flex flex-col p-5 gap-20 items-end justify-around">
           <BiSolidXSquare
             className="text-4xl animate-pulse text-gray-400"
             onClick={() => {
               SetMenu(!menu);
             }}
           />
-          <ul className="flex flex-col items-center justify-center gap-4 md:gap-10 w-full h-full text-2xl">
+          <ul className="flex flex-col gap-4 md:gap-10 w-full h-full text-2xl">
             <li className="flex items-center justify-center gap-1 hover:text-black cursor-pointer hover:border-x-8 border-black w-full text-center">
-              <p>Inicio</p>
+              <GiPencilBrush className="text-2xl" /> Inicio
             </li>
             <li className="flex items-center justify-center gap-1 hover:text-black cursor-pointer hover:border-x-8 border-black w-full text-center">
-              <p>Nuevos</p>
+              <AiOutlineShopping className="text-2xl" /> Nuevos
             </li>
             <li className="flex items-center justify-center gap-1 hover:text-black cursor-pointer hover:border-x-8 border-black w-full text-center">
-              <p>Compras</p>
+              <AiOutlineContacts className="text-2xl" /> Compras
             </li>
             <li className="flex items-center justify-center gap-1 hover:text-black cursor-pointer hover:border-x-8 border-black w-full text-center">
-              <p>Accesorios</p>
+              <GiPencilBrush className="text-2xl" /> Accesorios
             </li>
           </ul>
+          <h4 className="w-full text-center">SURI</h4>
         </div>
       ) : (
         <></>

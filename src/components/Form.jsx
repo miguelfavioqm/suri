@@ -15,7 +15,7 @@ const Form = () => {
           <label className="flex items-center justify-center ">
             Nombre
             <input
-              className="border-2 border-gray-200 mx-4 w-1/3"
+              className="border-2 border-gray-200 mx-4 md:w-1/3"
               type="text"
               name="name"
             />
@@ -25,7 +25,7 @@ const Form = () => {
           <label className="flex items-center justify-center ">
             Celular
             <input
-              className="border-2 border-gray-200 mx-4 w-1/3"
+              className="border-2 border-gray-200 mx-4 md:w-1/3"
               type="text"
               name="celular"
             />
@@ -35,7 +35,7 @@ const Form = () => {
           <label className="flex items-center justify-center">
             Email
             <input
-              className="border-2 border-gray-200 mx-4 w-2/5"
+              className="border-2 border-gray-200 mx-4 md:w-2/5"
               type="email"
               name="email"
             />
@@ -52,7 +52,7 @@ const Form = () => {
         </div>
         <button
           type="submit"
-          className="border-2 border-black rounded-md w-1/5"
+          className="border-2 border-black rounded-md w-1/5 hover:opacity-70"
         >
           Enviar
         </button>
