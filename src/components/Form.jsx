@@ -7,28 +7,55 @@ const Form = () => {
         Quieres contactarme? Mandame un mensaje 😊
       </h3>
       <form
-        name="contact v1"
-        method="post"
-        data-netlify="true"
-        onSubmit="submit"
+        action="https://getform.io/f/3aae5c4d-361f-47d2-9d61-beb86a192d79"
+        method="POST"
+        className="w-full flex flex-col items-center"
       >
-        <input type="hidden" name="form-name" value="contact v1" />
-        <div>
-          <label>
-            Nombre <br /> <input type="text" name="first-name" />
+        <div className="w-full my-2">
+          <label className="flex items-center justify-center ">
+            Nombre
+            <input
+              className="border-2 border-gray-200 mx-4 w-1/3"
+              type="text"
+              name="name"
+            />
           </label>
         </div>
-        <div>
-          <label htmlFor="email">
-            Email <br /> <input id="email" type="email" name="email" />
+        <div className="w-full my-2">
+          <label className="flex items-center justify-center ">
+            Celular
+            <input
+              className="border-2 border-gray-200 mx-4 w-1/3"
+              type="text"
+              name="celular"
+            />
           </label>
         </div>
-        <div>
-          <label>
-            Mensaje <br /> <textarea name="mensaje" />
+        <div className="w-full my-2">
+          <label className="flex items-center justify-center">
+            Email
+            <input
+              className="border-2 border-gray-200 mx-4 w-2/5"
+              type="email"
+              name="email"
+            />
           </label>
         </div>
-        <button type="sumbit">Submit</button>
+        <div className="w-full my-2">
+          <label className="flex items-center justify-center">
+            Mensaje
+            <textarea
+              name="message"
+              className="border-2 border-gray-200 mx-4 w-2/3"
+            />
+          </label>
+        </div>
+        <button
+          type="submit"
+          className="border-2 border-black rounded-md w-1/5"
+        >
+          Enviar
+        </button>
       </form>
     </div>
   );
