@@ -22,9 +22,13 @@ export default function MediaCard({ title, desc, precio, img }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <button className="text-black text-center w-full flex items-center justify-center gap-8 hover:text-gray-400">
+        <a
+          href="https://api.whatsapp.com/send?phone=76578052&text=%20Me%20intereso%20mucho%20el%20articulo%20podr%C3%ADas%20darme%20mayor%20informaci%C3%B3n%20"
+          target="_blank"
+          className="text-black text-center w-full flex items-center justify-center gap-8 hover:text-gray-400"
+        >
           <BsFillBagHeartFill /> Comprar
-        </button>
+        </a>
       </CardActions>
     </Card>
   );

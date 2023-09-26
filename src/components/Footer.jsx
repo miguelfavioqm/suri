@@ -21,7 +21,10 @@ const Footer = () => {
         >
           <BiLogoTiktok />
         </a>
-        <a href="#">
+        <a
+          href="https://api.whatsapp.com/send?phone=76578052&text=%20Hola%20visite%20tu%20pagina%20quisiera%20mayor%20informaci%C3%B3n%20%F0%9F%98%8A"
+          target="_blank"
+        >
           <BiLogoWhatsapp />
         </a>
       </div>

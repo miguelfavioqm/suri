@@ -7,7 +7,7 @@ export const Main = () => {
         alt=""
         className="w-full h-screen absolute -z-10 top-0"
       />
-      <h1 className="text-5xl bg-gradient-to-r from-orange-400 via-red-300 to-white inline-block text-transparent bg-clip-text">
+      <h1 className="text-5xl bg-gradient-to-r from-orange-100 via-red-300 to-white inline-block text-transparent bg-clip-text">
         SURI ART
       </h1>
       <div>Logo</div>
